@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Project Name AI Assistant 🤖</h1>
+        <nav>
+            <a href="index.html" class="current-page">Home</a>
+            <a href="about.html">About</a>
+            <a href="sentiment.html">feedback analysis</a>
+            <a href="login.html">Login</a>
+            <a href="text_to_speech.html">T_to_S</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to Your Project!</h2>
+        <p>This application integrates powerful IBM Watson services to offer intelligent features like a conversational chatbot, detailed sentiment analysis, and text-to-speech generation.</p>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <h3>Start a Conversation</h3>
+            <p>Click the chat icon in the bottom corner to begin interacting with the Watson Assistant.</p>
+            <img src="placeholder_logo.png" alt="Project Logo" style="max-width: 150px; margin-top: 20px;">
+        </div>
+        
+        <div id="watson-chat-container">
+            </div>
+
+    </main>
+
+    <script>
+        // Copy and paste the entire script tag provided by IBM Cloud here.
+        // It typically looks something like this (replace with your actual code):
+        
+        /* window.watsonAssistantChatOptions = {
+            integrationID: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            region: "us-south",
+            serviceInstanceID: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            showRestartButton: true
+        };
+        setTimeout(function(){const t=document.createElement('script');t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/WatsonAssistantChatEntry.js";document.head.appendChild(t);});
+        */
+        
+    </script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

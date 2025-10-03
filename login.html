@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Login Page Specific Styles */
+        .login-card {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            background-color: var(--card-background);
+        }
+        .login-card h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Login 🔑</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sentiment.html">feedback analysis</a>
+            <a href="login.html" class="current-page">Login</a>
+            <a href="text_to_speech.html">T_to_S</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-card">
+            <h2>Sign In</h2>
+            <div id="error-message" style="color: red; text-align: center; margin-bottom: 15px;"></div>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                
+                <button type="submit" style="width: 100%; margin-top: 20px;">Log In</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/login.js"></script> 
+    </body>
+</html>

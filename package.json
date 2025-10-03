@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "ibm-watson": "^11.0.0"
+  }
+}

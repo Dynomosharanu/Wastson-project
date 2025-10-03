@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Text-to-Speech (T_to_S) 🔊</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sentiment.html">feedback analysis</a>
+            <a href="login.html">Login</a>
+            <a href="text_to_speech.html" class="current-page">T_to_S</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Text to Speech Conversion</h2>
+        <form id="tts-form">
+            <label for="textInput">What should the AI say?</label>
+            <textarea id="textInput" rows="6" placeholder="Enter text to convert to a natural-sounding voice..."></textarea>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0;">
+                <label for="voiceSelect">Select Voice:</label>
+                <select id="voiceSelect" style="padding: 8px; border-radius: 4px;">
+                    <option value="en-US_AllisonV3Voice">US English - Allison</option>
+                    <option value="en-GB_KateV3Voice">UK English - Kate</option>
+                    <option value="es-ES_SofiaV3Voice">Spanish - Sofia</option>
+                    </select>
+            </div>
+            
+            <button type="submit" style="width: 100%; margin-top: 15px;">Synthesize Speech</button>
+        </form>
+
+        <section id="audio-output" style="text-align: center; margin-top: 40px;">
+            <h3>Listen to the Output:</h3>
+            <audio controls id="speechAudio" hidden></audio>
+        </section>
+    </main>
+
+    <script src="js/tts.js"></script> 
+    </body>
+</html>

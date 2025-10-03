@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sentiment Page Specific Styles */
+        .nlu-container {
+            display: flex;
+            gap: 30px;
+        }
+        .input-section {
+            flex: 2; /* Takes 2/3 of the space */
+        }
+        .results-section {
+            flex: 1; /* Takes 1/3 of the space */
+            background-color: #e9f5ff; /* Light blue background for results */
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .sentiment-output {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .positive { background-color: #d4edda; color: #155724; } /* Green */
+        .negative { background-color: #f8d7da; color: #721c24; } /* Red */
+        .neutral { background-color: #fff3cd; color: #856404; }  /* Yellow */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feedback Analysis 📊</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sentiment.html" class="current-page">feedback analysis</a>
+            <a href="login.html">Login</a>
+            <a href="text_to_speech.html">T_to_S</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Natural Language Understanding (NLU)</h2>
+        
+        <div class="nlu-container">
+            <div class="input-section">
+                <form id="nlu-form">
+                    <label for="feedbackText">Enter Feedback to Analyze:</label>
+                    <textarea id="feedbackText" rows="10" placeholder="Type your customer feedback, review, or text here for analysis..."></textarea>
+                    <button type="submit">Analyze Sentiment</button>
+                </form>
+            </div>
+
+            <div class="results-section">
+                <h3>Analysis Results:</h3>
+                <div id="sentiment-output" class="sentiment-output neutral">
+                    Sentiment: **Awaiting Analysis**
+                </div>
+                
+                <h4>Key Insights:</h4>
+                <p><strong>Overall Score:</strong> <span id="score-output">--</span></p>
+                <p><strong>Keywords:</strong> <span id="keywords-output">--</span></p>
+                <p><strong>Emotions:</strong> <span id="emotion-output">--</span></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/sentiment.js"></script> 
+    </body>
+</html>
